@@ -469,7 +469,13 @@ var inkHighlightRules = function() {
         }, {
             include: "#inlineLogic"
         }], 
-        "#mixedContent": [{ 
+        "#mixedContent": [{
+            regex: /_|^>>>.*$|<\/[^<]+>|\[[^\]]+\]|^\w*[\(\w*\)]*:|\$|\@|`/,
+            token: [
+                "link"
+            ],
+            next: "pop"
+        },{ 
             include: "#inlineContent" 
         }, {
             include: "#divert"
@@ -537,6 +543,8 @@ const keywords = [
     "TODO",
     "TURNS_SINCE",
     "VAR",
+    ">>>",
+    ">>> sfx"
 ];
 
 var InkMode = function() {

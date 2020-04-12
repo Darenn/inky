@@ -95,8 +95,15 @@
 }
 
 .window.dark #editor .ace-error {
-    background: darkred;
+    background: rgb(87, 12, 40);
 }
+
+/* Comments */
+.ace-tm .ace_comment {
+    /*color: #bb5018;*/
+    color: #C79183
+
+  }
 
 .window.dark #editor .ace_todo,
 .window.dark #editor .ace-todo {
@@ -113,18 +120,23 @@
 .window.dark .ace_editor span.ace_glue,
 .window.dark .ace_editor span.ace_include,
 .window.dark .ace_editor span.ace_external {
-  color: cyan;
+  color: #AC445D;
 }
 
 .window.dark .ace_editor span.ace_var-decl,
 .window.dark .ace_editor span.ace_list-decl,
 .window.dark .ace_editor span.ace_logic:not(.ace_innerContent) {
-  color: lightgreen;
+  color: #23638F;
 }
 
 .window.dark #main.hideTags .ace_editor span.ace_tag {
     color: #333;
 }
+
+.ace_editor span.ace_link {
+    color: #8982A1;
+   /* font-weight: bold;*/
+  }
 
 /* scrollbars */
 .window.dark *::-webkit-scrollbar {
@@ -172,3 +184,7 @@ background: #444;
     color: #ccc;
     border-right-color: #333;
 }
+
+#editor .ace-warning {
+    background: #644b04;
+  }

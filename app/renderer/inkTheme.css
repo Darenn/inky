@@ -33,3 +33,8 @@
 #main.hideTags .ace_editor span.ace_tag {
     color: white;
 }
+
+#main.hideTags .ace_editor span.ace_link {
+  color: #23638F;
+  font-weight: bold;
+}
